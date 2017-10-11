@@ -1,7 +1,7 @@
 tasks.withType(PublishToMavenRepository) { it.dependsOn test }
 
-ext.snapshotUrl = "http://artifactory.openlattice.com/artifactory/libs-snapshot-local"
-ext.releaseUrl = "http://artifactory.openlattice.com/artifactory/libs-snapshot-local"
+ext.snapshotUrl = "https://artifactory.openlattice.com/artifactory/libs-snapshot-local"
+ext.releaseUrl = "https://artifactory.openlattice.com/artifactory/libs-snapshot-local"
 ext.sonatypeMasterUrl = "https://oss.sonatype.org/service/local/staging/deploy/maven2"
 ext.sonatypeSnapshotUrl = "https://oss.sonatype.org/content/repositories/snapshots"
 
