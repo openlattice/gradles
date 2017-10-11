@@ -71,7 +71,7 @@ if ( ( System.getenv("bamboo_ARTIFACTORY_USERNAME") != null)  && ( System.getenv
 
     archivesBaseName = jarname
     
-    ext."signing.keyId" = 'FDEB5A45'
+    ext."signing.keyId" = 'B7944F9C'
     ext."signing.secretKeyRingFile" = "$System.env.bamboo_JAR_SIGNING_KEYRING"
     ext."signing.password" = "$System.env.bamboo_JAR_SIGNING_PASSWORD"
     
