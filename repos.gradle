@@ -5,6 +5,16 @@ repositories {
   // Hit the local maven repo
   mavenLocal()
 
+  //Hit our releases
+  maven {
+    url 'https://artifactory.openlattice.com/artifactory/libs-release-local/'
+  }
+
+  //Hit our snapshots
+  maven {
+    url 'https://artifactory.openlattice.com/artifactory/libs-snapshot/'
+  }
+
   // Hit sonatype snapshots
   maven {
     url 'https://oss.sonatype.org/content/repositories/snapshots'
