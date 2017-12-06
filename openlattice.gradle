@@ -136,8 +136,8 @@ ext.snakeyaml_version='1.19'
 ext.spark_version='2.2.0'
 ext.spark_cassandra_connector_version='2.0.1'
 ext.spongy_castle_version='1.51.0.0'
-ext.spring_framework_version='4.3.0.RELEASE'
-ext.spring_security_version='4.1.0.RELEASE'
+ext.spring_framework_version='4.3.13.RELEASE'
+ext.spring_security_version='4.2.3.RELEASE'
 ext.uuid_version='3.4'
 
 /**
