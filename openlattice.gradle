@@ -99,7 +99,7 @@ if( ext.fullVersion.contains("-SNAPSHOT") ) {
 /**
  * Internal Versions
  **/
-ext.conductor_client_version='0.0.5-SNAPSHOT'
+ext.conductor_client_version='0.0.6-SNAPSHOT'
 ext.kindling_version='0.0.1-SNAPSHOT'
 ext.scrunchie_version='0.0.2-SNAPSHOT'
 ext.datastore_version='0.0.0-SNAPSHOT'
