@@ -1,7 +1,7 @@
 //Easy semantic version based off describe + tags
 
 def bpr="${System.getenv("bamboo_planRepository_revision")}"
-if( bpr == 'null' || bpr == null ) {
+
   bpr = ''
 }
 
@@ -10,7 +10,11 @@ println "Using bpr: " + bpr
 def getVersionName = { ->
   def stdout = new ByteArrayOutputStream()
   exec {
-    commandLine 'git', 'describe', '--tags', '--long ' + bpr
+    if( bpr == 'null' || bpr == null ) {
+        commandLine 'git', 'describe', '--tags', '--long ' 
+    } else {
+        commandLine 'git', 'describe', '--tags', '--long ', bpr
+    }
     standardOutput = stdout
   }
   def tagVer = stdout.toString().trim()
@@ -27,7 +31,11 @@ version = getVersionName()
 def getFullVersion = { ->
   def stdout = new ByteArrayOutputStream()
   exec {
-    commandLine 'git', 'describe', '--tags', '--long ' + bpr
+    if( bpr == 'null' || bpr == null ) {
+        commandLine 'git', 'describe', '--tags', '--long' 
+    } else {
+        commandLine 'git', 'describe', '--tags', '--long', bpr
+    }
     standardOutput = stdout
   }
   def tagVer = stdout.toString().trim()
