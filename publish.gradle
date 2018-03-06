@@ -37,6 +37,8 @@ if( branch == null || branch == "" ) {
 }
 
 println "Branch detected as: " + branch;
+println "Version detected as: " + version;
+println "Full version detected as: " + ext.fullVersion;
 
 task sourcesJar(type : Jar) {
     classifier = 'sources'
