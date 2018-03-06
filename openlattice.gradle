@@ -11,9 +11,9 @@ def getVersionName = { ->
   def stdout = new ByteArrayOutputStream()
   exec {
     if( bpr == 'null' || bpr == null ) {
-        commandLine 'git', 'describe', '--tags', '--long ' 
+        commandLine 'git', 'describe', '--tags', '--long' 
     } else {
-        commandLine 'git', 'describe', '--tags', '--long ', bpr
+        commandLine 'git', 'describe', '--tags', '--long', bpr
     }
     standardOutput = stdout
   }
