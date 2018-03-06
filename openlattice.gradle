@@ -2,7 +2,7 @@
 def getVersionName = { ->
   def stdout = new ByteArrayOutputStream()
   exec {
-    commandLine 'git', 'describe', '--tags', '--dirty', '--long', "${System.getenv("bamboo_planRepository_revision")}"
+    commandLine 'git', 'describe', '--tags', '--long', "${System.getenv("bamboo_planRepository_revision")}"
     standardOutput = stdout
   }
   def tagVer = stdout.toString().trim()
@@ -19,7 +19,7 @@ version = getVersionName()
 def getFullVersion = { ->
   def stdout = new ByteArrayOutputStream()
   exec {
-    commandLine 'git', 'describe', '--tags', '--dirty', '--long', "${System.getenv("bamboo_planRepository_revision")}"
+    commandLine 'git', 'describe', '--tags', '--long', "${System.getenv("bamboo_planRepository_revision")}"
     standardOutput = stdout
   }
   def tagVer = stdout.toString().trim()
