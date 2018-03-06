@@ -5,7 +5,7 @@ if( bpr == 'null' || bpr == null ) {
   bpr = ''
 }
 
-print "Using bpr: " + bpr
+println "Using bpr: " + bpr
 
 def getVersionName = { ->
   def stdout = new ByteArrayOutputStream()
