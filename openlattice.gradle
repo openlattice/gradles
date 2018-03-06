@@ -2,9 +2,6 @@
 
 def bpr="${System.getenv("bamboo_planRepository_revision")}"
 
-  bpr = ''
-}
-
 println "Using bpr: " + bpr
 
 def getVersionName = { ->
