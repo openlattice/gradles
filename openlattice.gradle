@@ -113,7 +113,7 @@ ext.shuttle_java_version='0.1.8-SNAPSHOT'
 ext.api_version="0.0.8-SNAPSHOT"
 //${versionSuffix}"
 ext.rhizome_client_version='0.0.8-SNAPSHOT'
-ext.courier_version='0.0.1-SNAPSHOT';
+ext.courier_version='0.0.2-SNAPSHOT';
 ext.scribe_version='0.0.2-SNAPSHOT';
 /**
  * External versions
