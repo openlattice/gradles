@@ -2,7 +2,8 @@
 
 def bpr="${System.getenv("bamboo_planRepository_revision")}"
 
-println "Using bpr: " + bpr
+
+println project.name + " Using bpr: " + bpr
 
 def getVersionName = { ->
   def stdout = new ByteArrayOutputStream()
