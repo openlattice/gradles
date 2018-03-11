@@ -8,7 +8,7 @@ println project.name + " Using bpr: " + bpr
 def getVersionName = { ->
   def stdout = new ByteArrayOutputStream()
   exec {
-    if( bpr == 'null' || bpr == null ) {
+    if( bpr == 'null' || bpr == null || developmentMode ) {
         commandLine 'git', 'describe', '--tags', '--long' 
     } else {
         commandLine 'git', 'describe', '--tags', '--long', bpr
@@ -29,7 +29,7 @@ version = getVersionName()
 def getFullVersion = { ->
   def stdout = new ByteArrayOutputStream()
   exec {
-    if( bpr == 'null' || bpr == null ) {
+    if( bpr == 'null' || bpr == null || developmentMode ) {
         commandLine 'git', 'describe', '--tags', '--long' 
     } else {
         commandLine 'git', 'describe', '--tags', '--long', bpr
