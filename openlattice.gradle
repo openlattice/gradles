@@ -1,6 +1,6 @@
 //Easy semantic version based off describe + tags
 
-def bpr="${System.getenv("nbamboo_repository_branch_name")}"
+def bpr="${System.getenv("bamboo_planRepository_revision")}"
 
 println "Using bpr: " + bpr
 
