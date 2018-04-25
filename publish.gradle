@@ -1,7 +1,7 @@
 tasks.withType(PublishToMavenRepository) { it.dependsOn test }
 
 ext.snapshotUrl = "https://artifactory.openlattice.com/artifactory/libs-snapshot-local"
-ext.releaseUrl = "https://artifactory.openlattice.com/artifactory/libs-snapshot-local"
+ext.releaseUrl = "https://artifactory.openlattice.com/artifactory/libs-release-local"
 ext.sonatypeMasterUrl = "https://oss.sonatype.org/service/local/staging/deploy/maven2"
 ext.sonatypeSnapshotUrl = "https://oss.sonatype.org/content/repositories/snapshots"
 
@@ -37,6 +37,8 @@ if( branch == null || branch == "" ) {
 }
 
 println "Branch detected as: " + branch;
+println "Version detected as: " + version;
+println "Full version detected as: " + ext.fullVersion;
 
 task sourcesJar(type : Jar) {
     classifier = 'sources'

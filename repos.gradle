@@ -7,7 +7,7 @@ repositories {
 
   //Hit our releases
   maven {
-    url 'https://artifactory.openlattice.com/artifactory/libs-release-local/'
+    url 'https://artifactory.openlattice.com/artifactory/libs-release/'
   }
 
   //Hit our snapshots
