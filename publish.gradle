@@ -1,3 +1,13 @@
+buildscript {
+    repositories {
+        jcenter()
+    }
+
+    dependencies {
+        classpath "org.jetbrains.dokka:dokka-gradle-plugin:${dokka_version}"
+    }
+}
+
 tasks.withType(PublishToMavenRepository) { it.dependsOn test }
 
 ext.snapshotUrl = "https://artifactory.openlattice.com/artifactory/libs-snapshot-local"
