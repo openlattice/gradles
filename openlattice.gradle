@@ -101,9 +101,9 @@ if( ext.fullVersion.contains("-SNAPSHOT") ) {
 /**
  * Internal Versions
  **/
-ext.conductor_client_version='0.0.6-SNAPSHOT'
+ext.conductor_client_version='0.0.7-SNAPSHOT'
 ext.kindling_version='0.0.1-SNAPSHOT'
-ext.scrunchie_version='0.0.2-SNAPSHOT'
+ext.scrunchie_version='0.0.3-SNAPSHOT'
 ext.datastore_version='0.0.0-SNAPSHOT'
 ext.mail_service_version='0.0.3-SNAPSHOT'
 ext.mail_service_client_version='0.0.1-SNAPSHOT'
@@ -111,7 +111,7 @@ ext.rhizome_version='2.8.3-SNAPSHOT'
 ext.conductor_version='0.0.1-SNAPSHOT'
 ext.datastore_version='0.0.0-SNAPSHOT'
 ext.shuttle_java_version='0.1.8-SNAPSHOT'
-ext.api_version="0.0.8-SNAPSHOT"
+ext.api_version="0.0.10-SNAPSHOT"
 ext.rhizome_client_version='0.0.10-SNAPSHOT'
 ext.courier_version='0.0.2-SNAPSHOT'
 ext.scribe_version='0.0.2-SNAPSHOT'
