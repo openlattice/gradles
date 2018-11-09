@@ -111,6 +111,7 @@ ext.rhizome_version='2.9.1-SNAPSHOT'
 ext.conductor_version='0.0.2-SNAPSHOT'
 ext.datastore_version='0.0.0-SNAPSHOT'
 ext.shuttle_java_version='0.1.8-SNAPSHOT'
+ext.shuttle_version='0.0.3-SNAPSHOT'
 ext.api_version="0.0.10-SNAPSHOT"
 ext.rhizome_client_version='0.0.11-SNAPSHOT'
 ext.courier_version='0.0.2-SNAPSHOT'
