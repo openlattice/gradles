@@ -84,7 +84,7 @@ if ( ( bambooUsername != null)  && ( System.getenv("bamboo_ARTIFACTORY_PASSWORD"
 
     signing {
         sign configurations.archives
-        sign configurations.pom
+        //sign configurations.pom
     }
     
     if ( branch == "develop" || branch.startsWith("release/") ) {
