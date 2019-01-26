@@ -65,8 +65,6 @@ def bambooUsername = System.getenv("bamboo_ARTIFACTORY_USERNAME")
 println "Bamboo Username detected as " + bambooUsername
 
 if ( ( bambooUsername != null)  && ( System.getenv("bamboo_ARTIFACTORY_PASSWORD")!=null ) ) {
-    apply plugin: "signing"
-
     archivesBaseName = jarname
 
     artifacts {
