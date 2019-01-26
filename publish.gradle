@@ -55,16 +55,16 @@ task testJar(type: Jar, dependsOn: testClasses) {
     from sourceSets.test.output
 }
 
+configurations {
+    tests
+    published.extendsFrom tests, archives
+}
+
 artifacts {
     archives sourcesJar
     archives jar
     archives javadocJar
     tests testJar
-}
-
-configurations {
-    tests
-    published.extendsFrom tests, archives
 }
 
 def bambooUsername = System.getenv("bamboo_ARTIFACTORY_USERNAME")
