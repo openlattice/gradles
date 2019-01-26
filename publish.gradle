@@ -61,7 +61,7 @@ artifacts {
     archives javadocJar
     tests testJar
 }
-    
+
 configurations {
     tests
     published.extendsFrom tests, archives
@@ -86,7 +86,7 @@ if ( ( bambooUsername != null)  && ( System.getenv("bamboo_ARTIFACTORY_PASSWORD"
 
     signing {
         sign configurations.archives
-        //sign configurations.pom
+        sign configurations.pom
     }
     
     if ( branch == "develop" || branch.startsWith("release/") ) {
