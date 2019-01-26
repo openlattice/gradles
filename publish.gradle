@@ -1,3 +1,6 @@
+plugin {
+    id 'maven-publish'
+}
 tasks.withType(PublishToMavenRepository) { it.dependsOn test }
 
 ext.snapshotUrl = "https://artifactory.openlattice.com/artifactory/libs-snapshot-local"
@@ -65,7 +68,6 @@ def bambooUsername = System.getenv("bamboo_ARTIFACTORY_USERNAME")
 println "Bamboo Username detected as " + bambooUsername
 
 if ( ( bambooUsername != null)  && ( System.getenv("bamboo_ARTIFACTORY_PASSWORD")!=null ) ) {
-    apply plugin: "maven-publish"
     apply plugin: "signing"
 
     archivesBaseName = jarname
