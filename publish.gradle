@@ -1,6 +1,7 @@
-plugin {
+plugins {
     id 'maven-publish'
 }
+
 tasks.withType(PublishToMavenRepository) { it.dependsOn test }
 
 ext.snapshotUrl = "https://artifactory.openlattice.com/artifactory/libs-snapshot-local"
