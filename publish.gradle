@@ -67,12 +67,12 @@ println "Bamboo Username detected as " + bambooUsername
 if ( ( bambooUsername != null)  && ( System.getenv("bamboo_ARTIFACTORY_PASSWORD")!=null ) ) {
     archivesBaseName = jarname
 
-    artifacts {
-        // archives sourcesJar
-        archives jar
-        // archives javadocJar
-        tests testJar
-    }
+    // artifacts {
+    //     archives sourcesJar
+    //     archives jar
+    //     archives javadocJar
+    //     tests testJar
+    // }
     
     ext."signing.keyId" = 'B7944F9C'
     ext."signing.secretKeyRingFile" = "$System.env.bamboo_JAR_SIGNING_KEYRING"
