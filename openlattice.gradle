@@ -55,7 +55,7 @@ tasks.withType(Tar){
 }
 
 apply from: "https://raw.githubusercontent.com/openlattice/gradles/master/repos.gradle"
-apply from: "https://raw.githubusercontent.com/openlattice/gradles/master/publish.gradle"
+//apply from: "https://raw.githubusercontent.com/openlattice/gradles/master/publish.gradle"
 
 //Run jacoco after tests.
 if( project.hasProperty('projectName') && project.hasProperty('scmUrl')  ) {
