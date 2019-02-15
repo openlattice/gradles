@@ -106,7 +106,7 @@ if( ext.fullVersion.contains("-SNAPSHOT") ) {
 }
 
 if( !branch.equals("master") ) { //Anything except master
-  print "Using dependencies for $branch"
+  println "Using dependencies for " + branch
   /**
    * Internal Versions
    **/
