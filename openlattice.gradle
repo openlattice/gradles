@@ -220,6 +220,7 @@ if( !branch.equals("master") ) { //Anything except master
   ext.greenmail_version='1.5.9'
   ext.junit_version='4.12'
   ext.mockito_version='2.2.7'
+  ext.s3mock_version='0.2.5'
 } else {
 //Production versions
   /**
@@ -335,5 +336,6 @@ if( !branch.equals("master") ) { //Anything except master
   ext.greenmail_version='1.5.9'
   ext.junit_version='4.12'
   ext.mockito_version='2.2.7'
+  ext.s3mock_version='0.2.5'
 
 }
