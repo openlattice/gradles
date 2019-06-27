@@ -174,7 +174,7 @@ if( !branch.equals("master") ) { //Anything except master
   ext.jcip_version='1.0'
   ext.jdbi3_version='3.1.0'
   ext.jetty_version='9.4.14.v20181114'
-  ext.jmustache_version =' 1.11'
+  ext.jmustache_version ='1.11'
   ext.jodatime_version='2.9.1'
   ext.jodd_mail_version='5.0.7'
   ext.jstl_version='1.2'
