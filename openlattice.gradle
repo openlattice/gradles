@@ -116,14 +116,13 @@ if( !branch.equals("master") ) { //Anything except master
   ext.courier_version='0.0.2-SNAPSHOT'
   ext.datastore_version='0.0.1-SNAPSHOT'
   ext.kindling_version='0.0.1-SNAPSHOT'
-  ext.launchpad_version='1.1.4-SNAPSHOT'
+  ext.launchpad_version='1.1.7-SNAPSHOT'
   ext.mail_service_client_version='0.0.1-SNAPSHOT'
   ext.mail_service_version='0.0.3-SNAPSHOT'
   ext.rhizome_client_version='0.0.12-SNAPSHOT'
   ext.rhizome_version='3.0.1-SNAPSHOT'
   ext.scribe_version='0.0.2-SNAPSHOT'
   ext.scrunchie_version='0.0.3-SNAPSHOT'
-  ext.shuttle_java_version='0.1.8-SNAPSHOT'
   ext.shuttle_version='0.0.4-SNAPSHOT'
 
   /**
@@ -233,14 +232,13 @@ if( !branch.equals("master") ) { //Anything except master
   ext.courier_version='0.0.2'
   ext.datastore_version='0.0.1'
   ext.kindling_version='0.0.1'
-  ext.launchpad_version='1.1.4'
+  ext.launchpad_version='1.1.6'
   ext.mail_service_client_version='0.0.1'
   ext.mail_service_version='0.0.3'
   ext.rhizome_client_version='0.0.11'
   ext.rhizome_version='3.0.1'
   ext.scribe_version='0.0.2'
   ext.scrunchie_version='0.0.3'
-  ext.shuttle_java_version='0.1.8'
   ext.shuttle_version='0.0.3'
 
   /**
