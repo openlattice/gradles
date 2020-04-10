@@ -22,11 +22,11 @@ repositories {
 
   // Rhizome things
   maven {
-    url "http://maven.springframework.org/snapshot"
+    url "https://maven.springframework.org/snapshot"
   }
   
   maven {
-    url "http://maven.springframework.org/milestone"
+    url "https://maven.springframework.org/milestone"
   }
   maven {
     url "http://repo.maven.apache.org/maven2"
