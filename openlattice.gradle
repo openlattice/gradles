@@ -111,6 +111,7 @@ if( !branch.equals("master") ) { //Anything except master
    * Internal Versions
    **/
   ext.api_version='0.0.12-SNAPSHOT'
+  ext.chronicle_api_version='0.0.11-SNAPSHOT'
   ext.conductor_client_version='0.0.7-SNAPSHOT'
   ext.conductor_version='0.0.2-SNAPSHOT'
   ext.courier_version='0.0.2-SNAPSHOT'
