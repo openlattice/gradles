@@ -156,13 +156,13 @@ if ( ( bambooUsername != null)  && ( System.getenv("bamboo_ARTIFACTORY_PASSWORD"
     else if ( branch.equals("master") ) {
         publishing {
             repositories {
-                maven {
-                    url sonatypeMasterUrl
-                    credentials {
-                        username = "$System.env.bamboo_SONATYPE_USERNAME"
-                        password = "$System.env.bamboo_SONATYPE_PASSWORD"
-                    }
-                }
+                // maven {
+                //     url sonatypeMasterUrl
+                //     credentials {
+                //         username = "$System.env.bamboo_SONATYPE_USERNAME"
+                //         password = "$System.env.bamboo_SONATYPE_PASSWORD"
+                //     }
+                // }
                 maven { 
                     url releaseUrl
                     credentials {
