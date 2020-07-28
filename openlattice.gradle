@@ -1,4 +1,4 @@
-g//Easy semantic version based off describe + tags
+//Easy semantic version based off describe + tags
 
 def bpr="${System.getenv("bamboo_planRepository_revision")}"
 def branch ="$System.env.bamboo_planRepository_branchName"
